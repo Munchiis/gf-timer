@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background: url("sea.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+h1 {
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.time-container {
+    display: flex;
+    text-align: center;
+}
+
+.text {
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1;
+    margin: 0 3rem;
+}
+
+.element span {
+    font-size: 3rem;
+    margin: 0 3rem;
+}
