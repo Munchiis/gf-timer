@@ -1,5 +1,8 @@
 const anniversary = new Date('July 10 2021');
-
+const daysEL = document.getElementById('days');
+const hoursEL = document.getElementById('hours');
+const minsEL = document.getElementById('mins');
+const secEL = document.getElementById('sec');
 function countdown() {
 
     const currentDate = new Date();
@@ -18,9 +21,16 @@ function countdown() {
 
     console.log(upcoming);
 
+    daysEL.innerHTML = formatTime(days);
+hoursEL.innerHTML = formatTime(hours);
+minsEL.innerHTML = formatTime(minutes);
+secEL.innerHTML = formatTime(seconds);
+
 }
 
-
+function formatTime(time){
+    return time < 10 ? `0${time}`:time;
+}
 
 
 //initial call
